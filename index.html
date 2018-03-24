@@ -1,0 +1,333 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.1.6.2 (Linux)">
+	<META NAME="AUTHOR" CONTENT="Arshdeep singh Ahuja">
+	<META NAME="CREATED" CONTENT="20180226;121500000000000">
+	<META NAME="CHANGEDBY" CONTENT="Arshdeep singh Ahuja">
+	<META NAME="CHANGED" CONTENT="20180226;165400000000000">
+	<META NAME="AppVersion" CONTENT="16.0000">
+	<META NAME="Company" CONTENT="Microsoft">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 1in }
+		P { margin-bottom: 0.08in; direction: ltr; widows: 2; orphans: 2 }
+		A:link { color: #0000ff; so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-IN" LINK="#0000ff" DIR="LTR">
+<P ALIGN=CENTER STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Linear
+Programming in R  <br/> <br/>  <center> <a href="test.html">Click here to go to linear programming Question</a></center></B></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#ff0000"><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>What
+is Linear Programming?</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Linear
+programming (LP, also called </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>linear
+optimization</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>)
+is a method to achieve the best outcome (such as maximum profit or
+lowest cost) in a mathematical model whose requirements are
+represented by linear relationships. Linear programming is a special
+case of mathematical programming (mathematical optimization).</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>In
+general, LPP is an approach to come up with the best possible outcome
+using mathematical model to identify </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>extreme
+min</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+or</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>
+max</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+approach to find the </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>linear
+relationship</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+with the dataset. Which help us </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>optimizing</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+and help finding a </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>feasible
+point</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+or </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>region</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+for the problem.</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#ff0000"><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Basic
+Terminology</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Optimization:
+</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>it
+is an objective function explaining what you want min or max?</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Linear
+Objective Function:</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+It is normally quantitative variables or features like revenue,
+Profit, distance etc. from which we are going to optimize generally
+represented by:</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Optimization
+(Min or Max) Z = C1X1+C2x2…CnXn</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Where
+</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Z</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+is the </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>measure
+of performance</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>,
+which is a function of x1,x2,…xn.. Quantities C1,c2…cn(Parameters).</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Linear
+Constraint:</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+they are the limitation for the model. They are normally resources
+like machine, raw materials, space, money etc...</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Decision
+Variables:</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+The decision variables are the variables which will decide my output.
+They represent my ultimate solution. To solve any problem, we first
+need to identify the decision variables. For the above example, the
+total number of units for A and B denoted by X &amp; Y respectively
+are my decision variables.</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Non-negativity
+restriction</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>:
+For all linear programs, the decision variables should always take
+non-negative values. Which means the values for decision variables
+should be greater than or equal to 0.</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>In
+layman language we have to just plot the linear equation on a graph
+and draw lines and find the feasible region it is the simplest
+approach for a LPP. Which is a graphical approach/method for LPP.</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#ff0000"><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Formulation
+of Linear Programming Problem</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Let
+us look at the steps of defining a Linear Programming problem
+generically:</FONT></FONT></P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Identify
+	the decision variables</FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Write
+	the objective function</FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Mention
+	the constraints</FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Explicitly
+	state the non-negativity restriction</FONT></FONT></P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>For
+a problem to be a linear programming problem, the decision variables,
+objective function and constraints all have to be linear functions.</FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>If
+the all the three conditions are satisfied, it is called a </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Linear
+Programming Problem.</B></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#ff0000"><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Solve
+Linear Programs by Graphical Method</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>A
+linear program can be solved by multiple methods. In this section, we
+are going to look at the Graphical method for solving a linear
+program. This method is used to solve a two variable linear program.
+If you have only two decision variables, you should use the graphical
+method to find the optimal solution.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>A
+graphical method involves formulating a set of linear inequalities
+subject to the constraints. Then the inequalities are plotted on a
+X-Y plane. Once we have plotted all the inequalities on a graph the
+intersecting region gives us a feasible region. The feasible region
+explains what all values our model can take. And it also gives us the
+optimal solution.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Let’s
+understand this with the help of an example.</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Example</B></FONT></FONT></FONT><FONT COLOR="#2f5496"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>:
+A farmer has recently acquired a 110 hectares’ piece of land. He
+has decided to grow Wheat and barley on that land. Due to the quality
+of the sun and the region’s excellent climate, the entire
+production of Wheat and Barley can be sold. He wants to know how to
+plant each variety in the 110 hectares, given the costs, net profits
+and labour requirements according to the data shown below:</B></FONT></FONT></FONT></P>
+<TABLE WIDTH=623 CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=141>
+	<COL WIDTH=142>
+	<COL WIDTH=142>
+	<COL WIDTH=141>
+	<TR VALIGN=TOP>
+		<TD WIDTH=141 HEIGHT=23 BGCOLOR="#4472c4" STYLE="border: 1px solid #ffffff; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=JUSTIFY><B><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Variety</FONT></FONT></FONT></B></P>
+		</TD>
+		<TD WIDTH=142 BGCOLOR="#4472c4" STYLE="border-top: 1px solid #ffffff; border-bottom: none; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=JUSTIFY><B><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Cost
+			(price/Hec)</FONT></FONT></FONT></B></P>
+		</TD>
+		<TD WIDTH=142 BGCOLOR="#4472c4" STYLE="border-top: 1px solid #ffffff; border-bottom: none; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=JUSTIFY><B><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Net
+			Profit(price/Hec)</FONT></FONT></FONT></B></P>
+		</TD>
+		<TD WIDTH=141 BGCOLOR="#4472c4" STYLE="border-top: 1px solid #ffffff; border-bottom: none; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=JUSTIFY><B><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Man-days/Hec</FONT></FONT></FONT></B></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=141 HEIGHT=24 BGCOLOR="#4472c4" STYLE="border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+			<P ALIGN=JUSTIFY><B><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Wheat</FONT></FONT></FONT></B></P>
+		</TD>
+		<TD WIDTH=142 BGCOLOR="#b4c6e7" STYLE="border: 1px solid #ffffff; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=JUSTIFY><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>100</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=142 BGCOLOR="#b4c6e7" STYLE="border: 1px solid #ffffff; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=JUSTIFY><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>50</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=141 BGCOLOR="#b4c6e7" STYLE="border: 1px solid #ffffff; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=JUSTIFY><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>10</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=141 HEIGHT=23 BGCOLOR="#4472c4" STYLE="border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+			<P ALIGN=JUSTIFY><B><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Barley</FONT></FONT></FONT></B></P>
+		</TD>
+		<TD WIDTH=142 STYLE="border: 1px solid #ffffff; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=JUSTIFY><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>200</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=142 STYLE="border: 1px solid #ffffff; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=JUSTIFY><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>120</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=141 STYLE="border: 1px solid #ffffff; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+			<P ALIGN=JUSTIFY><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>30</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#2f5496"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>The
+farmer has a budget of US$10,000 and an availability of 1,200
+man-days during the planning horizon. Find the optimal solution and
+the optimal value</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Solution</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>:
+To solve this problem, first we going to formulate our linear
+program.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Formulation
+of Linear Problem</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><U><SPAN STYLE="background: #ffff00">Step
+1: Identify the decision variables</SPAN></U></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>The
+total area for growing Wheat = X (in hectares)</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>The
+total area for growing Barley = Y (in hectares)</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>X
+and Y are my decision variables.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: #ffff00">Step
+2: Write the objective function</SPAN></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Since
+the production from the entire land can be sold in the market. The
+farmer would want to maximize the profit for his total produce. We
+are given net profit for both Wheat and Barley. The farmer earns a
+net profit of US$50 for each hectare of Wheat and US$120 for each
+Barley.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Our
+objective function (given by Z) is, Max Z = 50X + 120Y</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: #ffff00">Step
+3: Writing the constraints</SPAN></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+</FONT></FONT></FONT>
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>It
+	is given that the farmer has a total budget of US$10,000. The cost
+	of producing Wheat and Barley per hectare is also given to us. We
+	have an upper cap on the total cost spent by the farmer. So our
+	equation becomes:</FONT></FONT></FONT></P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>100X
++ 200Y ≤ 10,000 </FONT></FONT></FONT>
+</P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>The
+	next constraint is, the upper cap on the availability on the total
+	number of man-days for planning horizon. The total number of
+	man-days available are 1200. As per the table, we are given the
+	man-days per hectare for Wheat and Barley.</FONT></FONT></FONT></P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>10X
++ 30Y ≤ 1200</FONT></FONT></FONT></P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>The
+	third constraint is the total area present for plantation. The total
+	available area is 110 hectares. So the equation becomes,</FONT></FONT></FONT></P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>X
++ Y ≤ 110</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000">
+</FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: #ffff00">Step
+4: The non-negativity restriction</SPAN></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>The
+values of X and Y will be greater than or equal to 0. This goes
+without saying.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>X
+≥ 0, Y ≥ 0</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>We
+have formulated our linear program. It’s time to solve it.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Solving
+a LP through Graphical method</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Since
+we know that X, Y ≥ 0. We will consider only the first quadrant.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>To
+plot for the graph for the above equations, first I will simplify all
+the equations.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>100X
++ 200Y ≤ 10,000 can be simplified </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: #00ff00">to
+</SPAN></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B><SPAN STYLE="background: #00ff00">X
++ 2Y ≤ 100</SPAN></B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+by dividing by 100.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>10X
++ 30Y ≤ 1200 can be simplified to </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B><SPAN STYLE="background: #00ff00">X
++ 3Y ≤ 120</SPAN></B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+by dividing by 10.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>The
+third equation is in its simplified form</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>,
+</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B><SPAN STYLE="background: #00ff00">X
++ Y ≤ 110</SPAN></B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>.</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Plot
+the first 2 lines on a graph in first quadrant (like shown below)</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>The
+optimal feasible solution is achieved at the point of intersection
+where the budget &amp; man-days constraints are active. This means
+the point at which the equations X + 2Y ≤ 100 and X + 3Y ≤ 120
+intersect gives us the optimal solution.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B><SPAN STYLE="background: #00ffff">The
+values for X and Y which gives the optimal solution is at (60,20).</SPAN></B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>To
+maximize profit, the farmer should produce Wheat and Barley in 60
+hectares and 20 hectares of land respectively.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>The
+maximum profit the company will gain is, </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Max
+Z = 50 * (60) + 120 * (20) = US$5400</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in; page-break-after: avoid">
+<IMG SRC="Linear_Programming_in_R_html_943f7745.png" NAME="Picture 1" ALIGN=BOTTOM WIDTH=476 HEIGHT=402 BORDER=0></P>
+<P STYLE="margin-bottom: 0.14in; line-height: 100%"><FONT COLOR="#44546a"><FONT SIZE=2 STYLE="font-size: 9pt"><I>Figure
+1-graphical Method</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.14in; line-height: 100%"><FONT COLOR="#44546a"><FONT SIZE=2 STYLE="font-size: 9pt"><FONT COLOR="#ff0000"><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN STYLE="font-style: normal"><B>Applications
+of Linear Programming</B></SPAN></FONT></FONT></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.22in; background: #ffffff; line-height: 0.26in">
+<FONT COLOR="#080e14"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Linear
+programming and Optimization are&nbsp;used in various industries.
+Manufacturing and service industry uses linear programming on a
+regular basis. In this section, we are going to look at the various
+applications of Linear programming.</FONT></FONT></FONT></P>
+<OL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#080e14"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Manufacturing
+	industries use linear programming for&nbsp;</FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B><SPAN STYLE="background: #00ffff">analysing
+	their supply chain operations</SPAN></B></FONT></FONT></FONT><FONT COLOR="#080e14"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: #00ffff">.</SPAN></FONT></FONT></FONT><FONT COLOR="#080e14"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+	Their motive is to maximize efficiency with minimum operation cost.
+	As per the recommendations from the linear programming model, the
+	manufacturer can reconfigure their storage layout, adjust their
+	workforce and reduce the bottlenecks.</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#080e14"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Linear
+	programming is also used in organized retail for&nbsp;</FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B><SPAN STYLE="background: #00ffff">shelf
+	space optimization</SPAN></B></FONT></FONT></FONT><FONT COLOR="#080e14"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN STYLE="background: #00ffff">.</SPAN></FONT></FONT></FONT><FONT COLOR="#080e14"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+	Since the number of products in the market have increased in leaps
+	and bounds, it is important to understand what does the customer
+	want. Optimization is aggressively used in stores like Reliance, Big
+	Bazaar, etc. The products in the store are placed strategically
+	keeping in mind the customer shopping pattern. The objective is to
+	make it easy for a customer to locate &amp; select the right
+	products. This is with subject to constraints like limited shelf
+	space, the variety of products, etc.</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-top: 0.19in; margin-bottom: 0.19in; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#080e14"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Well,
+	the applications of Linear programming don’t end here. There are
+	many more applications of linear programming in real-world like
+	applied by </FONT></FONT></FONT><FONT COLOR="#080e14"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Shareholders,
+	Sports, Stock Markets,</B></FONT></FONT></FONT><FONT COLOR="#080e14"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+	etc.&nbsp;Go on and explore further.<br/> <br/>  <center> <b> Bibliography : </b> Modeling and Solving Linear Programming with R by by Jose M Sallan (Author),‎ Oriol Lordan (Author),‎ Vicenc Fernandez (Author)</center><br/> <br/>  <center> <a href="test.html">Click here to go to linear programming Question</a></center> </FONT></FONT></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0.11in"><BR><BR>
+</P>
+</BODY>
+</HTML>
